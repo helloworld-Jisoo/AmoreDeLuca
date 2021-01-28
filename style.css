@@ -1,0 +1,140 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap");
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+}
+.portofolio {
+  color: white;
+  background: radial-gradient(rgb(97, 61, 34), rgba(11, 16, 35, 1));
+}
+nav {
+  min-height: 10vh;
+  width: 90%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0px;
+}
+
+.logo {
+  font-size: 20px;
+}
+
+.page {
+  min-height: 90vh;
+  display: grid;
+  grid-template-columns: 5% 1fr 1fr 1fr 5%;
+}
+
+.hero {
+  overflow: hidden;
+  height: 500px;
+  align-self: center;
+  justify-self: center;
+  display: flex;
+}
+
+.hero img {
+  height: 500px;
+  transition: transform 0.3s ease-out;
+  cursor: pointer;
+}
+
+.photo-right {
+  transform: translate(0%, 10%);
+}
+
+.photo-left {
+  transform: translate(0%, -10%);
+}
+.hero:hover .photo-right {
+  transform: translate(0%, 0%);
+}
+.hero:hover .photo-left {
+  transform: translate(0%, 0%);
+}
+.chef-right {
+  transform: translate(0%, 10%);
+}
+.chef-left {
+  transform: translate(0%, -10%);
+}
+.hero:hover .chef-right {
+  transform: translate(0%, 0%);
+}
+.hero:hover .chef-left {
+  transform: translate(0%, 0%);
+}
+.lara-right {
+  transform: translate(0%, 10%);
+}
+.lara-left {
+  transform: translate(0%, -10%);
+}
+.hero:hover .lara-right {
+  transform: translate(0%, 0%);
+}
+.hero:hover .lara-left {
+  transform: translate(0%, 0%);
+}
+
+.details {
+  grid-column: 2/3;
+  align-self: end;
+}
+
+.details h1 {
+  font-size: 64px;
+  font-weight: 400;
+}
+.details h2 {
+  font-size: 42px;
+  font-family: 300;
+  padding: 30px 0px;
+}
+.details p {
+  font-size: 24px;
+  padding: 20px 0px 50px 0px;
+}
+
+.pages {
+  position: absolute;
+  right: 5%;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.pages > div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.pages h3 {
+  font-size: 24px;
+  padding: 30px;
+}
+
+.fa-circle {
+  cursor: pointer;
+  opacity: 0.5;
+}
+.pages i:hover {
+  animation: dot 0.5s ease-in-out infinite alternate;
+}
+.pages i.active {
+  opacity: 1;
+}
+
+@keyframes dot {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(20);
+  }
+}
