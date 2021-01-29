@@ -203,6 +203,7 @@ nav {
 .work-gallery {
   display: grid;
   grid-template-columns: repeat(3, 250px);
+  grid-template-rows: repeat(2, 237px);
 }
 
 @media (max-width: 1024px) {
@@ -267,9 +268,6 @@ nav {
     }
     .hero h2 {
       font-size: 28px;
-    }
-    .work-gallery {
-      align-self: center;
     }
   }
 }
