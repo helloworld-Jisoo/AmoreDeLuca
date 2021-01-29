@@ -8,6 +8,7 @@ body {
   font-weight: 300;
 }
 .portofolio {
+  overflow: hiddlen;
   color: white;
   background: radial-gradient(rgba(96, 75, 43, 1), rgba(11, 16, 35, 1));
 }
@@ -36,6 +37,7 @@ nav {
   position: absolute;
   bottom: 0%;
   left: 0%;
+  width: 100%;
   opacity: 0;
   pointer-events: none;
 }
@@ -293,7 +295,7 @@ nav {
   z-index: 1;
   color: black;
   display: grid;
-  grid-template-columns: 5% 1fr 1fr 1fr 5%;
+  grid-template-columns: 5% 1fr 1fr 5%;
   justify-items: center;
   align-items: center;
   text-align: center;
