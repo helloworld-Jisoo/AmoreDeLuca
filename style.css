@@ -9,7 +9,7 @@ body {
 }
 .portofolio {
   color: white;
-  background: radial-gradient(rgba(43, 95, 96, 1), rgba(11, 16, 35, 1));
+  background: radial-gradient(rgba(96, 75, 43, 1), rgba(11, 16, 35, 1));
 }
 
 nav {
@@ -148,7 +148,7 @@ nav {
     transform: scale(1);
   }
   100% {
-    transform: scale(20);
+    transform: scale(4);
   }
 }
 
